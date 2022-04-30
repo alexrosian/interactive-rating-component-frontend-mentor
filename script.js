@@ -10,17 +10,21 @@ const thankYouState = document.querySelector('.thank-you-state');
 let score = '';
 let text = document.querySelector('.rating-selection');
 
-submit.addEventListener('click', onClick);
-
 one.addEventListener('click', onRateOne);
 two.addEventListener('click', onRateTwo);
 three.addEventListener('click', onRateThree);
 four.addEventListener('click', onRateFour);
 five.addEventListener('click', onRateFive);
 
+if (score === '') {
+  submit.addEventListener('click', onClick);
+}
+
 function onClick() {
-  ratingState.classList.add('hidden');
-  thankYouState.classList.remove('hidden');
+  if (score != '') {
+    ratingState.classList.add('hidden');
+    thankYouState.classList.remove('hidden');
+  }
 }
 
 function onRateOne() {

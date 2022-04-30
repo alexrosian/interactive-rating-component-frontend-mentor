@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/script.js"></script>
+
     <!-- displays site properly based on user's device -->
     <link
       rel="icon"
@@ -31,11 +32,12 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+
   </head>
   <body>
     <!-- Rating state start -->
     <!-- <div class="container"> -->
-      <div class="rating-state ">
+      <div class="rating-state">
         <img src="/images/icon-star.svg" alt="Orange star" class="star" />
         <h1>How did we do?</h1>
         <p class="copy">
@@ -43,11 +45,11 @@
           is appreciated to help us improve our offering!
         </p>
         <div class="rate">
-          <button class="rating">1</button>
-          <button class="rating">2</button>
-          <button class="rating">3</button>
-          <button class="rating">4</button>
-          <button class="rating">5</button>
+          <button id="1" class="rating one">1</button>
+          <button id="2" class="rating two">2</button>
+          <button id="3" class="rating three">3</button>
+          <button id="4" class="rating four">4</button>
+          <button id="5" class="rating five">5</button>
         </div>
         <div class="submit">
           <button class="submit">Submit</button>
@@ -58,7 +60,7 @@
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <div class="thank-you-state">
+      <div class="thank-you-state hidden">
         <img
           src="/images/illustration-thank-you.svg"
           alt="Illustration of a modern POS device"
@@ -67,7 +69,6 @@
         <p class="rating-selection">
           You selected
           <!-- Add rating here -->
-          1 out of 5
         </p>
         <h2>Thank you!</h2>
         <p class="copy">
@@ -85,4 +86,5 @@
       >. Coded by <a href="#">Alex Rosian Savu</a>.
     </div>
   </body>
+  <script defer="" src="script.js"></script>
 </html>
